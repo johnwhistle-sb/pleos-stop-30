@@ -1,0 +1,11 @@
+<resources>
+    <style name="StopTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#FBF9F5</item>
+        <item name="android:statusBarColor">#FBF9F5</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#FBF9F5</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:colorAccent">#145C4E</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

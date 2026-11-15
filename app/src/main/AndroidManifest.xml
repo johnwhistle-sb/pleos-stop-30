@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_MAP" />
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE" />
+    <application android:theme="@style/StopTheme" android:label="가는 길 30분" android:allowBackup="false"
+        android:icon="@drawable/stop_icon">
+        <uses-library android:name="android.car" android:required="false" />
+        <activity android:name=".StopActivity" android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
